@@ -1,6 +1,7 @@
 \documentclass{cv}
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
 \usepackage{biblatex}
+\usepackage{amsfonts}
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
@@ -20,14 +21,13 @@
 	% UWaterloo version
 	% I am interested in graph theory and graph algorithms research, with a particular interest in the graph minor project, graph colouring, and optimization on graph structures. In addition, I am also keen on quantum computing and hope to learn more through courses like quantum information processing and algebraic graph theory in the upcoming term.
 	% EPFL version
-	I am interested in graph theory and its applications, particularly in structural graph theory and optimization on graph structures. In addition, I am also keen on complexity theory and machine learning theory, which I hope to learn more the Formal Languages and Neural Networks courses in the upcoming semester.
+	I am interested in graph theory and and its applications, with a particular interest in structural graph theory. In addition, I am also keen on topics related to discrete optimization.
 \end{rSection}
 
 \begin{rSection}{Education}
 \begin{rSubsection}{University of Waterloo}{Sep 2017 - Present}{Currently in 4th year}{}
 	\item Double Major in Combinatorics \& Optimizations and Computer Science
 	\item Minor in Pure Mathematics
-	\item Major Average: 86.43/100
 	\item Term Dean's Honours List
 \end{rSubsection}
 
@@ -38,15 +38,12 @@
 % \end{rSubsection}
 
 \begin{rSubsection}{Relevant Courses}{}{Taken already / Expected before Summer 2021.}{G = Graduate Course}
-	\item Graph-theoretic Algorithms - CS762 (G)
-	\item Algorithms for Graph Minors - CO749 (G)
-	\item Algebraic Graph Theory - CO444 (G)
+	\item Graph-theoretic Algorithms - CS762 [G]
+	\item Algorithms for Graph Minors - CO749 [G]
+	\item Algebraic Graph Theory - CO444 [G]
 	\item Network Flow Theory - CO351
 	\item Introduction to Graph Theory - CO342
-	\item Neural Networks - CS489 (G)
-	\item Statistical and Mathematical Foundation for Machine Learning - CS485 (G)
-	\item Formal Languages and Parsing - CS462 (G)
-	\item Algebraic Number Theory - PMATH441 (G)
+	\item Introduction to Optimization - CO250
 \end{rSubsection}
 
 % UWaterloo version
@@ -58,15 +55,16 @@
 % 	\item Introduction to Graph Theory - CO342
 % \end{rSubsection}
 
-\begin{rSubsection}{Relevant Projects}{}{}{}
+\begin{rSubsection}{Relevant Projects}{}{}{}	
 	\item \textbf{Bounded Queue-number in Planar Graphs (CS762)} - \href{https://jeffreyhykam.com/writings/}{Project Page}\\
-	Explore a recent proof by Dujmovi\'{c} et al for a 20-year old conjectjure on whether the queue-number of planar graph is bounded. 
+	Explore a recent proof by Dujmovi\'{c} et al for a 20-year old conjectjure on whether the queue-number of planar graph is bounded. \\
+
 	\item \textbf{Tangles are Decided by Weighted Vertex Sets (CO749)} - \href{https://jeffreyhykam.com/writings/}{Project Page}\\
-	Explore a partial solution by Elbracht et al to an open problem by Diestel, who asked whether we can find a vertex subset $X$ that can definitively characterize a tangle by seeing which side of a low order separation has more vertices in $X$. We further explore the possibility improving the weight function to be polynomially-bounded by the number of vertices.
+	Explore a partial solution by Elbracht et al to an open problem by Diestel, who asked whether we can find a vertex subset $X$ that can definitively characterize a tangle by seeing which side of a low order separation has more vertices in $X$. 
 \end{rSubsection}
 \end{rSection}
 
-\begin{rSection}{Publication}
+\begin{rSection}{Publications}
 \begin{rSubsectionPure}
 	\item \textbf{{UBCIS}: Ultimate Benchmark for Container Image Scanning}, \\
 	with Shay Berkovich and Glenn Wurster \\
@@ -83,17 +81,18 @@
 \end{rSection}
 
 \begin{rSection}{Research Experience}
-\begin{rSubsection}{University of Waterloo - Symbolic Computation Group}{May 2020 - Sep 2020}{Undergraduate Researcher - Supervised by Dr. Armin Jamshidpey}{Waterloo, Canada}
-	\item Experiment with $J$-ideal and Smith Normal Form using SAGE.
-  	\item Understand relationships between matrix normal forms and ideals.
+\begin{rSubsection}{University of Waterloo - Symbolic Computation Group}{May 2020 - Sep 2020}{Undergraduate Research Assisstant \\ Supervised by Armin Jamshidpey}{Waterloo, Canada}
+	\item Experimented with $J$-ideal and Smith Normal Form using SAGE
+  	\item Researched different methods to find Smith Normal Form over $\mathbb{Z}_{p^2}$ efficiently, such as probabilistic algorithm
+  	\item Read about methods to find normal bases in $\mathbb{F}_{p^n}$ and revisited various topics in abstract algebra and Galois theory
 \end{rSubsection}
 
-\begin{rSubsection}{BlackBerry - Security Research Group}{Janurary 2020 - April 2020}{Security Research Intern}{Waterloo, Canada}
+\begin{rSubsection}{BlackBerry - Security Research Group}{Janurary 2020 - April 2020}{Security Research Intern \\ Supervised by Shay Berkovich and Glenn Wurster}{Waterloo, Canada}
 	\item Researched and designed a universal benchmark to quantitatively measure the effectiveness and accuracy of container image scanners
 	\item Analyzed techniques of image inspection and vulnerability scanning through open source technologies
 	\item Designed a universal import framework for Anchore Engine to extend our scanning capabilities
-	\item Researched on utilizing machine learning for fuzzing algorithmic complexity vulnerabilities (ACV)
-	\item Presented to the security research group on current developments of machine-learning-based fuzzing and fuzzing techniques for ACVs, along with potential problems, experiments, and optimizations.
+	\item Researched on utilizing machine learning for fuzzing algorithmic complexity vulnerabilities (ACV) by reading multiple security-related journals and conference papers
+	\item Presented to the security research group on current developments of ML-based fuzzing and fuzzing techniques for ACVs, along with potential problems, experiments, and optimizations
 \end{rSubsection}
 \end{rSection}
 
@@ -103,12 +102,13 @@
 \end{rSubsection}
 
 \begin{rSubsection}{Zenefits}{May 2019 - Aug 2019}{Software Engineering Intern}{Vancouver, Canada}
-	\item Developed new permission services in Django with extensive unit tests to guard against unauthorized edits of review data
-	\item Designed a sequeitial document update service using a distributed messsage queue system Celery
+	\item Developed new permission services in Python to guard against unauthorized review editing
+	\item Designed a sequeitial document update service using a distributed messsage queue system
 \end{rSubsection}
 
-\begin{rSubsection}{Horizn}{May 2018 - Aug 2018}{Web Developer Intern}{Toronto, Canada}
+\begin{rSubsection}{Horizn}{May 2018 - Aug 2018}{Software Developer Intern}{Toronto, Canada}
 	\item Wrote automation scripts in Python to scrape data from files and database into JSON files
+	\item Learned foundational object-oriented programming skills, such as factory and observer pattern
 \end{rSubsection}
 \end{rSection}
 
@@ -116,7 +116,7 @@
 \begin{rSubsectionPure}
 	\item First place in HackSeq 2017 bioinformatics competiton in UBC
 	\item Honourable mention in Canadian Computing Competition Hong Kong 2017
-	\item University of Waterloo President's Scholarship
+	% \item University of Waterloo President's Scholarship
 \end{rSubsectionPure}
 \end{rSection}
 
