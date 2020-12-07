@@ -1,8 +1,9 @@
 \documentclass{cv}
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
-\usepackage{biblatex}
 \usepackage{amsfonts}
 \usepackage{hyperref}
+\usepackage{biblatex}
+% \usepackage[sort, numbers]{natbib}
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
@@ -15,6 +16,9 @@
 % \address{\href{mailto:hykam@uwaterloo.ca}{hykam@uwaterloo.ca} \\
 % UWaterloo ID: 20716434}
 \address{\href{mailto:hykam@uwaterloo.ca}{hykam@uwaterloo.ca}}
+
+\addbibresource{bib.bib}
+
 \begin{document}
 
 \begin{rSection}{Interests}
@@ -57,10 +61,10 @@
 
 \begin{rSubsection}{Relevant Projects}{}{}{}	
 	\item \textbf{Bounded Queue-number in Planar Graphs (CS762)} - \href{https://jeffreyhykam.com/writings/}{Project Page}\\
-	Explore a recent proof by Dujmovi\'{c} et al for a 20-year old conjectjure on whether the queue-number of planar graph is bounded. \\
+	Explore a recent proof by Dujmovi\'{c} et al \cite{queue} for a 20-year old conjectjure on whether the queue-number of planar graph is bounded. \\
 
 	\item \textbf{Tangles are Decided by Weighted Vertex Sets (CO749)} - \href{https://jeffreyhykam.com/writings/}{Project Page}\\
-	Explore a partial solution by Elbracht et al to an open problem by Diestel, who asked whether we can find a vertex subset $X$ that can definitively characterize a tangle by seeing which side of a low order separation has more vertices in $X$. 
+	Explore a partial solution by Elbracht et al \cite{tangle} to an open problem by Diestel, who asked whether we can find a vertex subset $X$ that can definitively characterize a tangle by seeing which side of a low order separation has more vertices in $X$. 
 \end{rSubsection}
 \end{rSection}
 
@@ -82,9 +86,8 @@
 
 \begin{rSection}{Research Experience}
 \begin{rSubsection}{University of Waterloo - Symbolic Computation Group}{May 2020 - Sep 2020}{Undergraduate Research Assisstant \\ Supervised by Armin Jamshidpey}{Waterloo, Canada}
-	\item Experimented with $J$-ideal and Smith Normal Form using SAGE
-  	\item Researched different methods to find Smith Normal Form over $\mathbb{Z}_{p^2}$ efficiently, such as probabilistic algorithm
-  	\item Read about methods to find normal bases in $\mathbb{F}_{p^n}$ and revisited various topics in abstract algebra and Galois theory
+  	\item Researched different methods to find Smith Normal Form over $\mathbb{Z}_{p^2}$ efficiently, such as experimenting with probabilistic algorithms and utilizing $J$-ideal
+  	\item Investigate new efficient methods of finding normal bases in $\mathbb{F}_{p^n}$ and revisited various topics in abstract algebra and Galois theory
 \end{rSubsection}
 
 \begin{rSubsection}{BlackBerry - Security Research Group}{Janurary 2020 - April 2020}{Security Research Intern \\ Supervised by Shay Berkovich and Glenn Wurster}{Waterloo, Canada}
@@ -116,7 +119,7 @@
 \begin{rSubsectionPure}
 	\item First place in HackSeq 2017 bioinformatics competiton in UBC
 	\item Honourable mention in Canadian Computing Competition Hong Kong 2017
-	% \item University of Waterloo President's Scholarship
+	\item University of Waterloo President's Scholarship
 \end{rSubsectionPure}
 \end{rSection}
 
@@ -126,5 +129,8 @@
 	Tools & Git, C++ tools (i.e. GCC, GDB, Valgrind), Docker, Linux, Jupyter
 \end{tabular}
 \end{rSection}
+
+\newpage
+\printbibliography
 
 \end{document}
