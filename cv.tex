@@ -3,7 +3,6 @@
 \usepackage{amsfonts}
 \usepackage{hyperref}
 \usepackage{biblatex}
-% \usepackage[sort, numbers]{natbib}
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
@@ -13,8 +12,6 @@
 \urlstyle{same}
 
 \name{Jeffrey Kam}
-% \address{\href{mailto:hykam@uwaterloo.ca}{hykam@uwaterloo.ca} \\
-% UWaterloo ID: 20716434}
 \address{\href{mailto:hykam@uwaterloo.ca}{hykam@uwaterloo.ca}}
 
 \addbibresource{bib.bib}
@@ -22,49 +19,52 @@
 \begin{document}
 
 \begin{rSection}{Interests}
-	% UWaterloo version
-	% I am interested in graph theory and graph algorithms research, with a particular interest in the graph minor project, graph colouring, and optimization on graph structures. In addition, I am also keen on quantum computing and hope to learn more through courses like quantum information processing and algebraic graph theory in the upcoming term.
-	% EPFL version
-	I am interested in graph theory and and its applications, with a particular interest in structural graph theory and graph algorithms. In addition, I am also keen on topics related to discrete optimization.
+	I am interested in graph theory and would like to work on topics related to graph algorithms, graph colouring, and structural graph theory. In addition, I am also keen on topics related to discrete optimization.
 \end{rSection}
 
 \begin{rSection}{Education}
-\begin{rSubsection}{University of Waterloo}{Sep 2017 - Present}{Currently in 4th year}{}
-	\item Double Major in Combinatorics \& Optimizations and Computer Science
+% UWaterloo version
+\begin{rSubsection}{University of Waterloo}{Sep 2017 - Present}{Currently in term 4A}{}
+	\item Candidate for BMath. Combinatorics \& Optimization and Computer Science
 	\item Minor in Pure Mathematics
 	\item Term Dean's Honours List
 \end{rSubsection}
 
-% UWaterloo version
-% \begin{rSubsection}{University of Waterloo}{Sep 2017 - Present}{Currently in term 4A}{}
-% 	\item Double Major in Combinatorics \& Optimizations and Computer Science
+% External
+% \begin{rSubsection}{University of Waterloo}{Sep 2017 - Present}{Currently in 4^{th} year}{}
+% 	\item Double major in Combinatorics \& Optimization and Computer Science
 % 	\item Minor in Pure Mathematics
+% 	\item Term Dean's Honours List
 % \end{rSubsection}
 
-\begin{rSubsection}{Relevant Courses}{}{Taken already / Expected before Summer 2021.}{G = Graduate Course}
-	\item Graph-theoretic Algorithms - CS762 [G]
-	\item Algorithms for Graph Minors - CO749 [G]
-	\item Algebraic Graph Theory - CO444 [G]
+% UWaterloo version
+\begin{rSubsection}{Relevant Courses}{}{Taken already / Expected before Summer 2021.}{E = Expected}
+	\item Graph-theoretic Algorithms - CS762
+	\item Algorithms for Graph Minors - CO749
+	\item Algebraic Graph Theory - CO444 [E]
 	\item Network Flow Theory - CO351
 	\item Introduction to Graph Theory - CO342
+	\item Coding Theory - CO331 [E]
 	\item Introduction to Optimization - CO250
 \end{rSubsection}
 
-% UWaterloo version
-% \begin{rSubsection}{Relevant Courses}{}{}{}
-% 	\item Graph-theoretic Algorithms - CS762
-% 	\item Algorithms for Graph Minors - CO749
+% External
+% \begin{rSubsection}{Relevant Courses}{}{Taken already / Expected before Summer 2021.}{G = Graduate}
+% 	\item Graph-theoretic Algorithms - CS762 [G]
+% 	\item Algorithms for Graph Minors - CO749 [G]
 % 	\item Algebraic Graph Theory - CO444
 % 	\item Network Flow Theory - CO351
 % 	\item Introduction to Graph Theory - CO342
+% 	\item Coding Theory - CO331
+% 	\item Introduction to Optimization - CO250
 % \end{rSubsection}
 
 \begin{rSubsection}{Relevant Projects}{}{}{}	
-	\item \textbf{Bounded Queue-number in Planar Graphs (CS762)} - \href{https://jeffreyhykam.com/writings/}{Project Page}\\
-	Explore a recent proof by Dujmovi\'{c} et al \cite{queue} for a 20-year old conjectjure on whether the queue-number of planar graph is bounded. \\
+	\item \textbf{Bounded queue-number in planar graphs (CS762)} - \href{https://jeffreyhykam.com/writings/}{Project Page}\\
+	I explored a recent proof by Dujmovi\'{c} et al \cite{queue} for a 20-year old conjectjure on whether the queue-number of planar graphs is bounded. I also wrote lecture notes and made a lecture video on the topic.\\
 
-	\item \textbf{Tangles are Decided by Weighted Vertex Sets (CO749)} - \href{https://jeffreyhykam.com/writings/}{Project Page}\\
-	Explore a partial solution by Elbracht et al \cite{tangle} to an open problem by Diestel, who asked whether we can find a vertex subset $X$ that can definitively characterize a tangle by seeing which side of a low order separation has more vertices in $X$. 
+	\item \textbf{Deciding tangles with weighted vertex sets (CO749)} - \href{https://jeffreyhykam.com/writings/}{Project Page}\\
+	I wrote a report on Elbracht et al.'s fractional solution \cite{tangle} to an open problem about finding a vertex subset $X$ that characterizes a tangle by checking which side of a separation has more vertices in $X$. In addition, I also explored Oum and Seymour's paper \cite{branchwidth} on certifying large branch-width in polynomial time with tangle-kits. 
 \end{rSubsection}
 \end{rSection}
 
@@ -111,7 +111,7 @@
 
 \begin{rSubsection}{Horizn}{May 2018 - Aug 2018}{Software Developer Intern}{Toronto, Canada}
 	\item Wrote automation scripts in Python to scrape data from files and database into JSON files
-	\item Learned foundational object-oriented programming skills, such as factory and observer pattern
+	\item Learned foundational object-oriented programming concepts, such as factory and observer pattern
 \end{rSubsection}
 \end{rSection}
 
@@ -119,11 +119,10 @@
 \begin{rSubsectionPure}
 	\item First place in HackSeq 2017 bioinformatics competiton in UBC
 	\item Honourable mention in Canadian Computing Competition Hong Kong 2017
-	\item University of Waterloo President's Scholarship
 \end{rSubsectionPure}
 \end{rSection}
 
-\begin{rSection}{Skills}
+\begin{rSection}{Technical Skills}
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
 	Programming & Python, C++, SAGE, Scheme \\
 	Tools & Git, C++ tools (i.e. GCC, GDB, Valgrind), Docker, Linux, Jupyter
