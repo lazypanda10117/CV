@@ -35,7 +35,7 @@
 \def \name#1{\def\@name{#1}} % Defines the \name command to set name
 \def \@name {} % Sets \@name to empty by default
 
-\def \addressSep {$\diamond$} % Set default address separator to a diamond
+\def \addressSep {$\cdot$} % Set default address separator to a dot
 
 % One, two or three address lines can be specified 
 \let \@addressone \relax
@@ -60,15 +60,13 @@
     \def \\ {\addressSep\ }
     \centerline{#1}
   \endgroup
-  \par
-  \addressskip
 }
 
 % \printname is used to print the name as a page header
 \def \printname {
   \begingroup
-    \hfil{\MakeUppercase{\namesize\bf \@name}}\hfil
-    \nameskip\break
+    {{\namesize\bf \@name}}\hfil
+  \smallskip
   \endgroup
 }
 
@@ -133,7 +131,7 @@
 }
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
-\def\namesize{\large} % Size of the name at the top of the document
+\def\namesize{\huge} % Size of the name at the top of the document
 \def\addressskip{\smallskip} % The space between the two address (or phone/email) lines
 \def\sectionlineskip{\medskip} % The space above the horizontal line for each section 
 \def\nameskip{\bigskip} % The space after your name at the top
